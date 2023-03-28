@@ -14,12 +14,13 @@ public class projectile : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
 
+    public float dir = 1f;
 
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         Lifetime.StartCooldown();
-        _rigidbody.AddRelativeForce(new Vector2(x: Speed, y: 0f));
+        _rigidbody.AddRelativeForce(new Vector2(x: Speed * dir, y: 0f));
 
     }
 

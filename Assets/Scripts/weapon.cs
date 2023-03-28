@@ -25,6 +25,7 @@ public class weapon : MonoBehaviour
             return;
 
         GameObject bullet = Instantiate(Projectile,SpawnPos.position, SpawnPos.rotation);
+        bullet.GetComponent<projectile>().dir = transform.localScale.x;
         ShootInterval.StartCooldown();
 
     }    

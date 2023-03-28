@@ -74,7 +74,7 @@ public class movement : MonoBehaviour
         float pushhorizontal = 0f;
         if (source != null)
         {
-            if (source.transform.position.x < _inputDirection.x)
+            if (source.transform.position.x < transform.position.x)
             {
                 pushhorizontal = Jumpforce;
             }
