@@ -16,6 +16,8 @@ public class movement : MonoBehaviour
     public cooldown coyotetime;
     public bool IsGrounded = true;
     public float GroundCheckRadius = 0f;
+    public bool IsUp = false;
+    public bool IsDown = false;
     public bool IsRunning
     {
         get

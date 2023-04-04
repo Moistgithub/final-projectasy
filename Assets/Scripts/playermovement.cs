@@ -9,5 +9,21 @@ public class playermovement : movement
         _inputDirection = new Vector2(Input.GetAxis("Horizontal"), y: 0f);
         if(Input.GetButtonDown("Jump"))
             DoJump();
+
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            IsUp = true;
+            IsDown = false;
+        }
+        else if(Input.GetAxis("Vertical") < 0)
+        {
+            IsUp = false;
+            IsDown = true;
+        }
+        else
+        {
+            IsUp = false;
+            IsDown = false;
+        }
     }
 }

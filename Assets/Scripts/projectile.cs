@@ -6,21 +6,30 @@ using UnityEngine;
 public class projectile : MonoBehaviour
 {
     public float Damage = 1f;
-
     public float Speed = 10f;
     public float Pushforce = 10f;
     public cooldown Lifetime;
     public LayerMask TargetLayerMask;
+    public bool IsFlip = false;
+    private SpriteRenderer _spriteRenderer;
 
     private Rigidbody2D _rigidbody;
 
     public float dir = 1f;
+    public float updowndir = 1f;
 
     void Start()
     {
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        
         _rigidbody = GetComponent<Rigidbody2D>();
         Lifetime.StartCooldown();
         _rigidbody.AddRelativeForce(new Vector2(x: Speed * dir, y: 0f));
+
+        if (IsFlip)
+        {
+            _spriteRenderer.transform.localScale = new Vector3(_spriteRenderer.transform.localScale.x * -1, _spriteRenderer.transform.localScale.y, _spriteRenderer.transform.localScale.z);
+        }
 
     }
 
@@ -30,6 +39,7 @@ public class projectile : MonoBehaviour
         if (Lifetime.CurrentProgress != cooldown.Progress.Finished)
             return;
         Die();
+
     }
     private void Die()
     {

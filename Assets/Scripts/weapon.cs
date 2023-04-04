@@ -7,6 +7,9 @@ public class weapon : MonoBehaviour
     public GameObject Projectile;
     public Transform SpawnPos;
     public cooldown ShootInterval;
+    public bool IsFlip = false;
+
+
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -25,7 +28,14 @@ public class weapon : MonoBehaviour
             return;
 
         GameObject bullet = Instantiate(Projectile,SpawnPos.position, SpawnPos.rotation);
-        bullet.GetComponent<projectile>().dir = transform.localScale.x;
+
+        projectile projectile = bullet.GetComponent<projectile>();
+
+        projectile.dir = transform.localScale.x;
+        if(IsFlip)
+        {
+            projectile.IsFlip = IsFlip;
+        }
         ShootInterval.StartCooldown();
 
     }    
