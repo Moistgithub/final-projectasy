@@ -167,10 +167,12 @@ public class movement : MonoBehaviour
         coyotetime.StopCooldown();
 
     }
+
+    public Transform groundcheckpoint;
     protected void CheckGround()
     {
         IsGrounded = Physics2D.OverlapCircle(
-            transform.position, GroundCheckRadius, GroundLayerMask);
+            groundcheckpoint.position, GroundCheckRadius, GroundLayerMask);
 
         if (_rigidbody.velocity.y <= 0f)
         {

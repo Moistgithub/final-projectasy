@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PositionOffset: {x: 0, y: 0}
-  LerpSpeed: 1
+  LerpSpeed: 3
   minPosition: {x: -100, y: -1}
   maxPosition: {x: 100, y: 100}
 --- !u!1 &544186584
@@ -2097,6 +2097,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5519024553951145133, guid: 48ef859ffd889474c9ed369e06432a3e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6318443292233605708, guid: 48ef859ffd889474c9ed369e06432a3e, type: 3}
       propertyPath: ShootInterval.Duration
       value: 0.3
@@ -2157,6 +2161,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9156839202421172543, guid: 48ef859ffd889474c9ed369e06432a3e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5416ad1c23d1ec4387a3ef767843faa, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48ef859ffd889474c9ed369e06432a3e, type: 3}
 --- !u!1001 &2083672793
