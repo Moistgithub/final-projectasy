@@ -18,6 +18,7 @@ public class movement : MonoBehaviour
     public float GroundCheckRadius = 0f;
     public bool IsUp = false;
     public bool IsDown = false;
+    public float knockbackforce = 5f;
     public bool IsRunning
     {
         get
@@ -78,15 +79,15 @@ public class movement : MonoBehaviour
         {
             if (source.transform.position.x < transform.position.x)
             {
-                pushhorizontal = Jumpforce;
+                pushhorizontal = knockbackforce;
             }
             else
             {
-                pushhorizontal = -Jumpforce;
+                pushhorizontal = -knockbackforce;
             }
         }
         _rigidbody.velocity = Vector2.zero;
-        _rigidbody.velocity = new Vector2(pushhorizontal, Jumpforce);
+        _rigidbody.velocity = new Vector2(pushhorizontal, knockbackforce);
         disableinput = true;
     }
 
