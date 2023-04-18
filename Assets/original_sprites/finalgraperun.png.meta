@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 68102816ce6c0af468214e7e49390ba8
+guid: ccc32540c5465fd42a514415142bc031
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carrot beast_0
+      name: finalgraperun_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,35 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b27212f46fc7747a6afc41d8ecf83e
-      internalID: 1653595370
+      spriteID: a8349220316d8ce4b8806c40685e2eb6
+      internalID: 1421688152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot beast_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17ae2c8f469216c4e9fc12cd85fc2cfa
-      internalID: 1595176455
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: carrot beast_2
+      name: finalgraperun_1
       rect:
         serializedVersion: 2
         x: 0
@@ -173,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7b49688ea88c9b41967cd448a0e36bd
-      internalID: -1162798991
+      spriteID: 395e7a5472ffd6b4dad56600017e21d7
+      internalID: -1002345079
       vertices: []
       indices: 
       edges: []
@@ -190,9 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      carrot beast_2: -1162798991
-      carrot beast_0: 1653595370
-      carrot beast_1: 1595176455
+      finalgraperun_1: -1002345079
+      finalgraperun_0: 1421688152
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

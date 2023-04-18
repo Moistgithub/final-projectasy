@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 2213500106825820509}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2eece19b378350046aa35ee62ca67930, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -251,6 +251,7 @@ MonoBehaviour:
   GroundCheckRadius: 0.5
   IsUp: 0
   IsDown: 0
+  knockbackforce: 7
   _slopeangle: 45
   groundcheckpoint: {fileID: 5512737957314611841}
 --- !u!114 &8436761468008447697

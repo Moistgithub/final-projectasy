@@ -172,8 +172,7 @@ public class movement : MonoBehaviour
     public Transform groundcheckpoint;
     protected void CheckGround()
     {
-        IsGrounded = Physics2D.OverlapCircle(
-            groundcheckpoint.position, GroundCheckRadius, GroundLayerMask);
+        IsGrounded = Physics2D.OverlapCircle(groundcheckpoint.position, GroundCheckRadius, GroundLayerMask);
 
         if (_rigidbody.velocity.y <= 0f)
         {

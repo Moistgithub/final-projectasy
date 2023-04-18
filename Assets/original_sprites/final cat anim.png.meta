@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 68102816ce6c0af468214e7e49390ba8
+guid: af9c513b28e56b045bca5de1ea7d1c6a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: carrot beast_0
+      name: final cat anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b27212f46fc7747a6afc41d8ecf83e
-      internalID: 1653595370
+      spriteID: 83153f52a293a3a42a7c49d959e372eb
+      internalID: 639628125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot beast_1
+      name: final cat anim_1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17ae2c8f469216c4e9fc12cd85fc2cfa
-      internalID: 1595176455
+      spriteID: f91ec3e16ccad784fbc9b467c6f14ba0
+      internalID: -1876466694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: carrot beast_2
+      name: final cat anim_2
       rect:
         serializedVersion: 2
         x: 0
@@ -173,8 +173,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7b49688ea88c9b41967cd448a0e36bd
-      internalID: -1162798991
+      spriteID: d0077d629d38ccd429fab91269cb3a31
+      internalID: -333895764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: final cat anim_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8ddef490e1ea343ae674918b0990d7
+      internalID: -672148939
       vertices: []
       indices: 
       edges: []
@@ -190,9 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      carrot beast_2: -1162798991
-      carrot beast_0: 1653595370
-      carrot beast_1: 1595176455
+      final cat anim_0: 639628125
+      final cat anim_3: -672148939
+      final cat anim_1: -1876466694
+      final cat anim_2: -333895764
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

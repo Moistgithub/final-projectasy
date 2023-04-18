@@ -23,7 +23,7 @@ public class health : MonoBehaviour
     public cooldown invulnerable;
     public float _currenthealth = 10f;
     public bool _candamage = true;
-    public void Damage(float damageAmount, GameObject source)
+    public virtual void Damage(float damageAmount, GameObject source)
     {
         if (!_candamage)
             return;
