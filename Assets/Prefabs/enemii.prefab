@@ -334,6 +334,7 @@ MonoBehaviour:
   invulnerable:
     Duration: 0.1
     CurrentProgress: 0
+  maxhealth: 0
   _currenthealth: 10
   _candamage: 1
 --- !u!114 &5756061570053100623

@@ -21,6 +21,7 @@ public class health : MonoBehaviour
 
     //private
     public cooldown invulnerable;
+    public float maxhealth;
     public float _currenthealth = 10f;
     public bool _candamage = true;
     public virtual void Damage(float damageAmount, GameObject source)
@@ -37,6 +38,11 @@ public class health : MonoBehaviour
         onhit?.Invoke(source);
     }
 
+    public void Start()
+    {
+        float maxhealth = _currenthealth;
+
+    }
     private void Update()
     {
         ResetInvulnerable();
@@ -57,4 +63,5 @@ public class health : MonoBehaviour
         Debug.Log("died");
         Destroy(this.gameObject);
     }
+
 }
