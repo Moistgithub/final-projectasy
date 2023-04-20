@@ -17,4 +17,15 @@ public class damager : MonoBehaviour
             return;
         targethealth.Damage(Damage, transform.gameObject);
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!((TargetLayerMask.value & (1 << collision.gameObject.layer)) > 0))
+            return;
+        health targethealth = collision.gameObject.GetComponent<health>();
+
+        if (targethealth == null)
+            return;
+        targethealth.Damage(Damage, transform.gameObject);
+    }
 }

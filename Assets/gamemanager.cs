@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -30,11 +29,25 @@ public class gamemanager : MonoBehaviour
 
     }
 
+    public string RetryScene = "";
     public string NextSceneName = "";
+    public string MainMenuName = "";
     public void  LoadScene()
     {
        SaveGame();
        SceneManager.LoadScene(NextSceneName);
 
+    }
+    public void Retry()
+    {
+        if (RetryScene == "")
+            return;
+        SceneManager.LoadScene(RetryScene);
+    }
+    public void Mainmenu()
+    {
+        if (RetryScene == "")
+            return;
+        SceneManager.LoadScene(MainMenuName);
     }
 }
