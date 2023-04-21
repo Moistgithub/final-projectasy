@@ -107,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0d4a1a503c2386e4095738add201ac62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8093b83a25a243f42a5b26671e7a0a80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,7 +128,7 @@ Animator:
   m_GameObject: {fileID: 5756061569527492563}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 35140b00df028914d827b49a9ac52fbc, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 5756061570053100623}
   - component: {fileID: 5756061570053100616}
   m_Layer: 7
-  m_Name: enemii
+  m_Name: spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a20f87508c9f5124e829df8b78af93b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 2
+  Acceleration: 0
   Jumpforce: 2
   GroundLayerMask:
     serializedVersion: 2
@@ -263,7 +263,7 @@ MonoBehaviour:
   right: {fileID: 5756061569287620880}
   EnemyLayermask:
     serializedVersion: 2
-    m_Bits: 640
+    m_Bits: 128
 --- !u!70 &5756061570053100620
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -334,8 +334,8 @@ MonoBehaviour:
   invulnerable:
     Duration: 0.1
     CurrentProgress: 0
-  maxhealth: 1
-  _currenthealth: 1
+  maxhealth: 0
+  _currenthealth: 10
   _candamage: 1
 --- !u!114 &5756061570053100623
 MonoBehaviour:
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cafe75e22d9ed54b9963d557681bd38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 1
+  Damage: 1000
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 64

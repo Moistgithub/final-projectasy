@@ -129,7 +129,7 @@ MonoBehaviour:
   right: {fileID: 749696247544373305}
   EnemyLayermask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 640
 --- !u!70 &3864495196537668595
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -232,7 +232,8 @@ MonoBehaviour:
   invulnerable:
     Duration: 1
     CurrentProgress: 0
-  _currenthealth: 10
+  maxhealth: 3
+  _currenthealth: 3
   _candamage: 1
   offsetY: 0.4
 --- !u!1 &3864495197684756253
