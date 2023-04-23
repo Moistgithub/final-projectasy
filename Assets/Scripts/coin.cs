@@ -17,6 +17,14 @@ public class coin : MonoBehaviour
             if (Scoremanager == null)
                 return;
 
+            health _health = collider.GetComponent<health>();
+
+            if(_health != null)
+            {
+                _health.Heal(1f);
+            }
+
+
             Scoremanager.addscore(coinadd);
             Destroy(gameObject);
         }

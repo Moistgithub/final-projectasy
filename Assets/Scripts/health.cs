@@ -57,6 +57,23 @@ public class health : MonoBehaviour
         _candamage = true;
         onhitreset?.Invoke();
     }
+
+    public void Heal(float amount)
+    {
+        float projection = _currenthealth + amount;
+
+        switch (projection)
+        {
+            case float i when i >= maxhealth:
+                _currenthealth = maxhealth;
+                break;
+
+            case float i when i < maxhealth:
+                _currenthealth = projection;
+                break;
+        }
+    }
+
     public void Die()
     {
         GameObject.Instantiate(DeathParticles, transform.position, transform.rotation);

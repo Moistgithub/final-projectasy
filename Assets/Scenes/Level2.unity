@@ -3484,6 +3484,10 @@ PrefabInstance:
       propertyPath: NextSceneName
       value: Main menu
       objectReference: {fileID: 0}
+    - target: {fileID: 5528143456433607138, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 093d01b1e851c7f40a0f899f9736f25a, type: 3}
     - target: {fileID: 5528143456433607141, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
       propertyPath: m_Name
       value: Goal
@@ -3493,12 +3497,24 @@ PrefabInstance:
       value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 5528143456433607166, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528143456433607166, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528143456433607166, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528143456433607166, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 215.44
+      value: 215.22
       objectReference: {fileID: 0}
     - target: {fileID: 5528143456433607166, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.53
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 5528143456433607166, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
       propertyPath: m_LocalPosition.z
