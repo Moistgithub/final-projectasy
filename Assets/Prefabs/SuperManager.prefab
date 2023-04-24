@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1504860312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504860313}
+  - component: {fileID: 1504860314}
+  m_Layer: 0
+  m_Name: deathmanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504860313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504860312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8106470059891719160}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1504860314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504860312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e37be2542e6df4ca3d850c296f252d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathScreen: {fileID: 0}
+  Cooldown: 3
 --- !u!1 &5223420737587918627
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,6 +122,7 @@ Transform:
   m_Children:
   - {fileID: 5223420737587918626}
   - {fileID: 4617601865524722090}
+  - {fileID: 1504860313}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -91,12 +138,20 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 605827686637131409, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
+      propertyPath: RetryScene
+      value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 605827686637131409, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
+      propertyPath: MainMenuName
+      value: Main menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 605827686637131409, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
       propertyPath: scoremanager
       value: 
       objectReference: {fileID: 5223420737587918625}
     - target: {fileID: 605827686637131409, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
       propertyPath: NextSceneName
-      value: Main menu
+      value: Level2
       objectReference: {fileID: 0}
     - target: {fileID: 605827686637131414, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
       propertyPath: m_RootOrder
@@ -142,6 +197,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2457558845518363874, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
+      propertyPath: money.clip.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457558845518363874, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
+      propertyPath: money.clip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 93664d15b2da11e458ee75151834afc7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
 --- !u!4 &4617601865524722090 stripped

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605827686637131414}
   - component: {fileID: 605827686637131409}
+  - component: {fileID: 2457558845518363874}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,4 +46,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoremanager: {fileID: 0}
-  NextSceneName: Level1
+  RetryScene: Level2
+  NextSceneName: Level3
+  MainMenuName: Main Menu
+--- !u!114 &2457558845518363874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605827686637131408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17f45f98606714e468d2f38a638f53d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioObject: {fileID: 6854744857160447585, guid: c3fdbac473200334983275cf55142014, type: 3}
+  jump:
+    clip:
+    - {fileID: 8300000, guid: f1761daefca513d41926111d38e7efa8, type: 3}
+    volume: 1
+    pitch: 1
+    pitchVariability: 0
+    cd:
+      Duration: 0
+      CurrentProgress: 0
+  shoot:
+    clip:
+    - {fileID: 8300000, guid: 20ab1f4077735e441a5dd1cdf3b64bf8, type: 3}
+    volume: 1
+    pitch: 1
+    pitchVariability: 0
+    cd:
+      Duration: 0
+      CurrentProgress: 0
+  enemyDeath:
+    clip:
+    - {fileID: 8300000, guid: 59038a03d96ea704c836baaa4da05db9, type: 3}
+    volume: 1
+    pitch: 1
+    pitchVariability: 0
+    cd:
+      Duration: 0
+      CurrentProgress: 0
+  boss:
+    clip:
+    - {fileID: 8300000, guid: 281872236e69f2c41934896029f3395d, type: 3}
+    volume: 1
+    pitch: 1
+    pitchVariability: 0
+    cd:
+      Duration: 2
+      CurrentProgress: 0
+  bossDeath:
+    clip:
+    - {fileID: 8300000, guid: a952e4712bb47b749a1be299c48eaf12, type: 3}
+    volume: 1
+    pitch: 1
+    pitchVariability: 0
+    cd:
+      Duration: 1
+      CurrentProgress: 0
+  cathurt:
+    clip:
+    - {fileID: 8300000, guid: 856fefd93b567d5458ee927dfc436b95, type: 3}
+    volume: 1
+    pitch: 1
+    pitchVariability: 0
+    cd:
+      Duration: 0.5
+      CurrentProgress: 0
+  money:
+    clip:
+    - {fileID: 8300000, guid: 93664d15b2da11e458ee75151834afc7, type: 3}
+    volume: 1
+    pitch: 1
+    pitchVariability: 0
+    cd:
+      Duration: 1
+      CurrentProgress: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9047193962353737059}
   m_Layer: 10
   m_Name: TheBigBadBoss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -18,8 +18,8 @@ public class coin : MonoBehaviour
                 return;
 
             health _health = collider.GetComponent<health>();
-
-            if(_health != null)
+            FindObjectOfType<AudioManager>().Play("money", transform.position);
+            if (_health != null)
             {
                 _health.Heal(1f);
             }

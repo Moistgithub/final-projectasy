@@ -35,6 +35,10 @@ public class health : MonoBehaviour
         }
         invulnerable.StartCooldown();
         _candamage = false;
+        if (gameObject.tag == "Player")
+        {
+            FindObjectOfType<AudioManager>().Play("cathurt", transform.position);
+        }
         onhit?.Invoke(source);
     }
 
@@ -76,8 +80,21 @@ public class health : MonoBehaviour
 
     public void Die()
     {
+        switch (gameObject.tag)
+        {
+            case "Enemy":
+                FindObjectOfType<AudioManager>().Play("enemydeath", transform.position);
+                break;
+
+
+            case "Boss":
+                FindObjectOfType<AudioManager>().Play("bossdeath", transform.position);
+                break;
+        }
+
         GameObject.Instantiate(DeathParticles, transform.position, transform.rotation);
         Debug.Log("died");
+
         Destroy(this.gameObject);
     }
 

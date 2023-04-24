@@ -25,12 +25,18 @@ public class weaponhandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.X)) 
+        if (Input.GetKeyDown(KeyCode.X))
+        {
             _tryshoot = true;   
+            FindObjectOfType<AudioManager>().Play("shoot", transform.position);
+        }
         if(Input.GetKeyUp(KeyCode.X))
             _tryshoot=false;
+
         if (_tryshoot)
+        {
             Currentweapon.shoot();
+        }
         HandleWeapon();
     }
  

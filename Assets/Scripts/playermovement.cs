@@ -7,8 +7,14 @@ public class playermovement : movement
     protected override void HandleInput()
     {
         _inputDirection = new Vector2(Input.GetAxis("Horizontal"), y: 0f);
-        if(Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump")) 
+        {
+            if(_canjump)
+            {
+                FindObjectOfType<AudioManager>().Play("jump", transform.position);
+            }
             DoJump();
+        }
 
         if (Input.GetAxis("Vertical") > 0)
         {

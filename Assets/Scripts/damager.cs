@@ -15,7 +15,12 @@ public class damager : MonoBehaviour
 
         if (targethealth == null)
             return;
+        if (gameObject.tag == "Player")
+        {
+            FindObjectOfType<AudioManager>().Play("cathurt", transform.position);
+        }
         targethealth.Damage(Damage, transform.gameObject);
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -26,6 +31,10 @@ public class damager : MonoBehaviour
 
         if (targethealth == null)
             return;
+        if (gameObject.tag == "Player")
+        {
+            FindObjectOfType<AudioManager>().Play("cathurt", transform.position);
+        }
         targethealth.Damage(Damage, transform.gameObject);
     }
 }

@@ -5,13 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class gamemanager : MonoBehaviour
 {
-
     public scoremanager scoremanager;
 
     private void Start()
     {
+
         scoremanager = FindObjectOfType<scoremanager>();
         LoadGame();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
     public void SaveGame()
     {
@@ -40,9 +44,9 @@ public class gamemanager : MonoBehaviour
     }
     public void Retry()
     {
-        if (RetryScene == "")
-            return;
-        SceneManager.LoadScene(RetryScene);
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        SceneManager.LoadScene(currentScene);
     }
     public void Mainmenu()
     {
