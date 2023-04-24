@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4617601865524722093, guid: e444e6e8f8cd1854ba569e310ad2a4e8, type: 3}
       propertyPath: NextSceneName
-      value: Credits
+      value: Interrim4
       objectReference: {fileID: 0}
     - target: {fileID: 5223420737587918625, guid: e444e6e8f8cd1854ba569e310ad2a4e8, type: 3}
       propertyPath: scoredisplay
@@ -953,7 +953,7 @@ PrefabInstance:
       objectReference: {fileID: 605827686637131409, guid: 493b09d09f2f60d4a8c006a5ac9bad05, type: 3}
     - target: {fileID: 5528143456433607137, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
       propertyPath: NextSceneName
-      value: Credits
+      value: Interrim4
       objectReference: {fileID: 0}
     - target: {fileID: 5528143456433607138, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
       propertyPath: m_Sprite

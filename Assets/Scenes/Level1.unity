@@ -16482,6 +16482,10 @@ PrefabInstance:
       propertyPath: DeathScreen
       value: 
       objectReference: {fileID: 526589915}
+    - target: {fileID: 4617601865524722093, guid: e444e6e8f8cd1854ba569e310ad2a4e8, type: 3}
+      propertyPath: NextSceneName
+      value: Interrim2
+      objectReference: {fileID: 0}
     - target: {fileID: 7214540386042262811, guid: e444e6e8f8cd1854ba569e310ad2a4e8, type: 3}
       propertyPath: m_Name
       value: SuperManager
@@ -16543,6 +16547,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 500725212}
+    - target: {fileID: 5528143456433607137, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
+      propertyPath: NextSceneName
+      value: Interrim2
+      objectReference: {fileID: 0}
     - target: {fileID: 5528143456433607138, guid: 5fff90ec5d06e6b459c1dbbf1a65c60b, type: 3}
       propertyPath: m_Sprite
       value: 
