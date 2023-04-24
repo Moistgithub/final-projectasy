@@ -604,8 +604,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Arcade text: \nwfonts.com\n\nbayat games: \nplaceholder assets\n\ncharacter
     sprites and animations: \nmustafa irfan\n\nsound effects: \ndone on Bxfr\n\nspecial
-    thanks to:\ntommy, andy and aaron!\n\nand a huge thank you to everyone in our
-    class this year! all of you guys are great!\n"
+    thanks to:\n\nRaven,tommy, andy and aaron!\nand a huge thank you to everyone
+    in our class this year! all of you guys are great!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b0d1a53e10a2c684b8c45a3231502d2f, type: 2}
   m_sharedMaterial: {fileID: 6398307236271200224, guid: b0d1a53e10a2c684b8c45a3231502d2f, type: 2}
