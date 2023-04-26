@@ -71,7 +71,6 @@ public class movement : MonoBehaviour
         Debug.Log("should reeset");
         disableinput = false;
     }
-
     private void hit(GameObject source)
     {
         float pushhorizontal = 0f;
@@ -97,7 +96,6 @@ public class movement : MonoBehaviour
         {
             _health.onhit -= hit;
             _health.onhitreset -= ResetMove;
-
         }
     }
     void Update()
@@ -190,14 +188,15 @@ public class movement : MonoBehaviour
 
         }
 
-        if (!IsGrounded && !IsJumping
-                       && coyotetime.CurrentProgress == cooldown.Progress.Ready)
+        if (!IsGrounded && !IsJumping && coyotetime.CurrentProgress == cooldown.Progress.Ready)
+        {
             coyotetime.StartCooldown();
-
+        }
     }
     protected void CheckSlope()
     {
         _slopehit = Physics2D.Raycast(transform.position, Vector2.down, 1f, GroundLayerMask);
+
         if (_slopehit)
         {
             _isonslope = true;
@@ -216,7 +215,6 @@ public class movement : MonoBehaviour
             _lastslopeangle = _slopeangle;
         }
   
-
         if (_slopeangle > MaxSlopeAngle)
         {
             _canwalkonslope = false;
@@ -225,9 +223,14 @@ public class movement : MonoBehaviour
         {
             _canwalkonslope = true;
         }
+
         if (/*_isonslope && _canwalkonslope &&*/ _inputDirection.x == 0)
         {
             _rigidbody.sharedMaterial = FullFriction;
+        }
+        else if (!IsGrounded)
+        {
+            _rigidbody.sharedMaterial = nostickyair;
         }
         else
         {
